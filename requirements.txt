@@ -1,0 +1,17 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Object Detection & Tracking System — requirements.txt
+#  Install with:  pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Core computer-vision stack
+opencv-python>=4.8.0          # video capture, drawing, display
+numpy>=1.24.0                 # array operations
+
+# YOLO (YOLOv8) — downloads weights automatically on first run (~6 MB for nano)
+ultralytics>=8.0.0
+
+# Required by the SORT tracker (Kalman filter)
+filterpy>=1.4.5
+
+# Hungarian algorithm used by SORT (ships inside scipy)
+scipy>=1.10.0
